@@ -27,7 +27,7 @@ class Data(BaseModel):
     native_country: str = Field(..., example="United-States", alias="native-country")
 
 cur_dir = os.getcwd()
-path = os.path.join(cur_dir, "model", "encoder.pkl") # TODO: enter the path for the saved encoder 
+path = os.path.join(cur_dir, "model", "encoder.pkl")
 encoder = load_model(path)
 
 path = os.path.join(cur_dir, "model", "model.pkl") # TODO: enter the path for the saved model 
